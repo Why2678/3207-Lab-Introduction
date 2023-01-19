@@ -2,21 +2,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+char randchar();
 
-//srand((unassigned)time(0));
+//srand((unsigned)time(0));
 
 int main(){
-	srand(32);
+	//srand((unsigned)time(0));
+
+	printf("%c \n", randchar);
+
+}
+
+char randchar(){
+	srand((unsigned)time(0));
 	short asciUpperCase = 65;
 	short numLetters = 26;
 
-	char example = (char)rand()%numLetters+asciUpperCase;
+	char example = (char)(rand()%numLetters+asciUpperCase);
 
-	printf("%c \n", example);
-
-
-
-
-
-
+	return example;
 }
