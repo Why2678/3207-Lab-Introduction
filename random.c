@@ -4,12 +4,9 @@
 #include <time.h>
 char randchar();
 
-//srand((unsigned)time(0));
-
 int main(){
-	//srand((unsigned)time(0));
-
-	printf("%c \n", randchar);
+	char my_char = randchar;
+	printf("%c \n", my_char);
 
 }
 
